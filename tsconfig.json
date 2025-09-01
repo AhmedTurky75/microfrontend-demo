@@ -1,5 +1,3 @@
-/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
-/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -22,5 +20,25 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/host-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/host-app/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mfe-one/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/mfe-one/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/mfe-two/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/mfe-two/tsconfig.spec.json"
+    }
+  ]
 }
