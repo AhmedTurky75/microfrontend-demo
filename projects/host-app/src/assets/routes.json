@@ -1,0 +1,23 @@
+[
+    {
+      "path": "feature",
+      "remoteName": "mfe-one",
+      "exposedModule": "./FeatureModule",
+      "remoteEntry": "http://localhost:4201/remoteEntry.js",
+      "moduleClass": "./FeatureModule"
+    },
+    {
+      "path": "feature/first",
+      "remoteName": "mfe-one",
+      "exposedModule": "./FeatureModule",
+      "remoteEntry": "http://localhost:4201/remoteEntry.js",
+      "moduleClass": "./FeatureModule"
+    },
+    {
+      "path": "feature/second",
+      "remoteName": "mfe-one",
+      "exposedModule": "./FeatureModule",
+      "remoteEntry": "http://localhost:4201/remoteEntry.js",
+      "moduleClass": "./FeatureModule"
+    }
+  ]

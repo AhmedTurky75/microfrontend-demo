@@ -28,7 +28,8 @@
 								"input": "projects/host-app/public",
 								"output": "."
 							},
-							"projects/host-app/src/assets/mf.manifest.json"
+							"projects/host-app/src/assets/mf.manifest.json",
+							"projects/host-app/src/assets/routes.json"
 						],
 						"styles": [
 							"projects/host-app/src/styles.scss"

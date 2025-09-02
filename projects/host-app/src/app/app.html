@@ -180,6 +180,28 @@
       margin-block: 1.5rem;
     }
   }
+
+  .feature-button {
+    margin-top: 2rem;
+  }
+
+  .feature-btn {
+    background: var(--red-to-pink-to-purple-horizontal-gradient);
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
 </style>
 
 <main class="main">
@@ -326,8 +348,18 @@
           </svg>
         </a>
       </div>
+      <div class="feature-button">
+        <button routerLink="/feature" class="feature-btn">Go to Feature</button>
+      </div>
+      <div class="feature-button">
+        <button routerLink="/feature/first" class="feature-btn">Go to Feature First</button>
+      </div>
+      <div class="feature-button">
+        <button routerLink="/feature/second" class="feature-btn">Go to Feature Second</button>
+      </div>
     </div>
   </div>
+  <router-outlet></router-outlet>
 </main>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
