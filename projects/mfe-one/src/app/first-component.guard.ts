@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
     providedIn: 'root'
 })
 export class FirstComponentGuard implements CanActivate {
-    private hasAccess = new BehaviorSubject<boolean>(false);
+    private hasAccess = new BehaviorSubject<boolean>(true);
 
     constructor(private router: Router) { }
 
