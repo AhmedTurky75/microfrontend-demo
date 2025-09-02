@@ -6,13 +6,13 @@ import { BehaviorSubject } from 'rxjs';
     providedIn: 'root'
 })
 export class FirstComponentGuard implements CanActivate {
-    private hasAccess = new BehaviorSubject<boolean>(true);
+    private hasAccess = new BehaviorSubject<boolean>(false);
 
     constructor(private router: Router) { }
 
     async canActivate(): Promise<boolean> {
         if (!this.hasAccess.value) {
-            this.router.navigate(['/feature']);
+            this.router.navigate(['/']);
             console.log('Access to First Component is denied by FirstComponentGuard');
             return false;
         }

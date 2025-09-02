@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class FeatureGuard implements CanActivate {
-  private isEnabled = new BehaviorSubject<boolean>(false);
+  private isEnabled = new BehaviorSubject<boolean>(true);
 
   constructor(private router: Router) { }
 
