@@ -1,4 +1,18 @@
 {
-    "mfe-one": "http://localhost:4201/remoteEntry.js",
-    "mfe-two": "http://localhost:4202/remoteEntry.js"
+    "mfe-one": {
+        "remoteEntry": "http://localhost:4201/remoteEntry.js",
+
+        "exposedModule": "./FeatureModule",
+        "displayName": "Features",
+        "routePath": "feature",
+        "ngModuleName": "FeatureModule"
+    },
+    "mfe-two": {
+        "remoteEntry": "http://localhost:4202/remoteEntry.js",
+
+        "exposedModule": "./Module",
+        "displayName": "Bookings",
+        "routePath": "bookings",
+        "ngModuleName": "BookingsModule"
+    }
 }
