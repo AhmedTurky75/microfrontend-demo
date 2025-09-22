@@ -3,10 +3,10 @@ import { Router, RouterOutlet } from '@angular/router';
 import { getManifest } from '@angular-architects/module-federation';
 import { CustomRemoteConfig, CustomManifest } from './utils/config';
 import { buildRoutes } from './utils/routes';
-
+import {AuthLib} from 'auth-lib';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet , AuthLib],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

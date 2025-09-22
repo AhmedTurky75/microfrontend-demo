@@ -1,6 +1,14 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      // "auth-lib": [
+      //   "./dist/auth-lib"
+      // ],
+      "auth-lib": [
+    "./projects/auth-lib/src/public-api.ts"
+]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
@@ -39,6 +47,12 @@
     },
     {
       "path": "./projects/mfe-two/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/auth-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/auth-lib/tsconfig.spec.json"
     }
   ]
 }
